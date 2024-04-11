@@ -4,6 +4,25 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
+Install node and nvm.
+Node installation: https://nodejs.org/en/download
+NVM installation: https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
+
+Check node and nvm on the PC: 
+```bash
+node -v && nvm -v
+```
+
+Install node v.20.11.1 using nvm:
+```bash
+nvm install 20.11.1
+```
+Check version of node:
+```bash
+# v20.11.1
+node -v
+```
+
 ```bash
 npm run dev
 # or
