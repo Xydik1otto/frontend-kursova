@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main_info {
+    width: 920px;
+    height: 550px;
+    background-color: #35302C;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main_info img {
+    display: block;
+    width: 452px;
+    height: 534px;
+    float: right;
+    margin: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.main_info p:first-of-type {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 126px;
+}
+.main_info p:last-of-type {
+    color: #ffffff;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    padding-top: 44px;
+    padding-left: 48px;
+    padding-right: 48px; /* Відступ справа */
+}
