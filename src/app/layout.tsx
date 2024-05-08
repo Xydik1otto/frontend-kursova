@@ -14,7 +14,9 @@ export const metadata: Metadata = {
 
 const RootLayout: NextPage<OnlyChildrenType> = ({children}) =>
     <html lang="en">
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+            {children}
+        </body>
     </html>
 
 export default RootLayout;

@@ -1,9 +1,14 @@
-import Image from "next/image";
+// Core
+import {FC} from "react";
+// Components
+import ComfortRoom from "@/components/comfort-room/ComfortRoom";
 
-export default function Home() {
+const Home: FC = () => {
   return (
     <div>
-     First initialization
+     {/*<ComfortRoom />*/}
     </div>
   );
 }
+
+export default Home;
