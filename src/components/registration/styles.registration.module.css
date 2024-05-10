@@ -104,8 +104,8 @@ del {
     text-decoration: underline;
 }
 .horizontal-line1 {
-    width: 197px; /* ширина лінії */
-    height: 1px; /* висота лінії */
+    width: 197px;
+    height: 1px;
     background-color: white;
     position: absolute;
     top: 491px;
@@ -113,8 +113,8 @@ del {
     border-radius: 1px;
 }
 .horizontal-line2 {
-    width: 197px; /* ширина лінії */
-    height: 1px; /* висота лінії */
+    width: 197px;
+    height: 1px;
     background-color: white;
     position: absolute;
     top: 491px;
@@ -146,8 +146,8 @@ del {
     position: absolute;
     background-image: url('public/svg/google.svg');
     background-repeat: no-repeat;
-    background-size: 14px; /* Розмір SVG */
-    background-position: 10px center; /* Відступи від краю кнопки */
+    background-size: 14px;
+    background-position: 10px center;
     left: 216px;
     top: 526px;
 }
@@ -167,8 +167,8 @@ del {
     position: absolute;
     background-image: url('public/svg/facebook.svg');
     background-repeat: no-repeat;
-    background-size: 14px; /* Розмір SVG */
-    background-position: 10px center; /* Відступи від краю кнопки */
+    background-size: 14px;
+    background-position: 10px center;
     left: 216px;
     top: 557px;
 }
