@@ -8,6 +8,7 @@ const Home: FC = () => {
   return (
     <div>
      {/*<ComfortRoom />*/}
+
     </div>
 
   );
