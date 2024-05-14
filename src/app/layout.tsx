@@ -1,11 +1,15 @@
 // Core
-import {Inter} from "next/font/google";
+import {Montserrat_Alternates} from "next/font/google";
 // Styles
 import "./globals.css";
 // Types
 import type {Metadata, NextPage} from "next";
 
-const inter = Inter({subsets: ["latin"]});
+const montserrat = Montserrat_Alternates({
+    weight: ['400', '500', '600'],
+    preload: true,
+    subsets: ['latin']
+});
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -14,7 +18,7 @@ export const metadata: Metadata = {
 
 const RootLayout: NextPage<OnlyChildrenType> = ({children}) =>
     <html lang="en">
-        <body className={inter.className}>
+        <body className={montserrat['className']}>
             {children}
         </body>
     </html>
