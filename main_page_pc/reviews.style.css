@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.reviews {
+    width: 1440px;
+    height: 380px;
+    background-color: #35302C;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.reviews_title {
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    position: absolute;
+    padding-top: 22px;
+    padding-left: 669px;
+    text-align: center;
+}
+.reviews_overall {
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    padding-top: 57px;
+    padding-left: 551px;
+    text-align: center;
+}
+.reviews_main {
+    width: 520px;
+    height: 160px;
+    background-color: white;
+    position: absolute;
+    border-radius: 20px;
+    top: 116px;
+    left: 460px;
+}
+.reviews_username {
+    display: block;
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    text-align: center;
+}
+.reviews_rating_desc {
+    display: block;
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    text-align: center;
+}
+.reviews_rating {
+    display: block;
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    text-align: center;
+}

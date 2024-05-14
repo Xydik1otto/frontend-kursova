@@ -6,7 +6,7 @@ import styles from './styles.main.info.module.css';
 
 const MainInfo: FC = () => {
     return (
-        <div className={styles["main_info"]}>
+        <div className="main_info">
             <Image
                 width={100}
                 height={100}

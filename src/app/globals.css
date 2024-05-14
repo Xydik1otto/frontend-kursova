@@ -1,4 +1,12 @@
 @import "../styles/reset.css";
+@import "../components/comfort-room/styles.module.css";
+@import "../components/lux-room/styles.lux.module.css";
+@import "../components/standart-room/styles.standart.module.css";
+@import "../components/login/styles.login.module.css";
+@import "../components/registration/styles.registration.module.css";
+@import "../components/main-info/styles.main.info.module.css";
+@import "../components/econom-room-info/styles.eco.info.module.css";
+@import "../components/econom-room/styles.eco.module.css";
 
 @tailwind base;
 @tailwind components;

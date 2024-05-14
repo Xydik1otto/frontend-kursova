@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.discount_block {
+    width: 700px;
+    height: 360px;
+    background-color: #35302C;
+    border-radius: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.discount_img {
+    display: block;
+    width: 275px;
+    height: 344px;
+    border-radius: 40px;
+    object-fit: cover;
+    top: 8px;
+    left: 8px;
+    position: absolute;
+}
+.discount_name {
+    color: #AFAFAF;
+    text-align: left;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 39px;
+    padding-left: 468px;
+}
+.discount_propose {
+    color: #ffffff;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 9px;
+    padding-left: 362px;
+}
+.discount_desc {
+     color: white;
+     font-family: 'Montserrat Alternates', sans-serif;
+     font-weight: 500;
+     font-size: 16px;
+     position: absolute;
+     padding-top: 25px;
+     padding-left: 355px;
+     text-align: center;
+ }
+.detail_button_discount {
+    width: 220px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 77px;
+    left: 382px;
+    cursor: pointer;
+}
+.discount_button_left {
+    width: 50px;
+    height: 50px;
+    background-color: #35302C;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    top: 155px;
+    left: -72px;
+}
+.discount_direction_left {
+    width: 12px;
+    height: 25px;
+    position: absolute;
+    top: 9px;
+    left: 13px;
+}
+.discount_button_right {
+    width: 50px;
+    height: 50px;
+    background-color: #35302C;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    top: 155px;
+    right: -72px;
+}
+.discount_direction_right {
+    width: 12px;
+    height: 25px;
+    position: absolute;
+    top: 13px;
+    left: 21px;
+    transform: rotate(180deg);
+}

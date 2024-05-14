@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .comfort_room {
     width: 500px;
     height: 480px;
@@ -24,7 +25,7 @@
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 24px;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 20px;
 }
 .room_desc_comfort {
@@ -33,14 +34,14 @@
     font-weight: 500;
     font-size: 16px;
     text-align: left;
-    padding-top: 10px;
     padding-left: 20px;
 }
 
-.detail-button {
+.detail_button_comfort {
     width: 220px;
     height: 40px;
     background-color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
     color: black;
     font-weight: 600;
     font-size: 16px;
@@ -49,7 +50,7 @@
     bottom: 30px;
     left: 30px;
 }
-.price-text-comfort {
+.price_text_comfort {
     color: white;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;

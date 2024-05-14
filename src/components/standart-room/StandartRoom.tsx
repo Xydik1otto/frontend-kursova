@@ -6,10 +6,10 @@ import styles from './styles.standart.module.css';
 
 const StandartRoom: FC = () => {
     return (
-        <div className={styles["standart_room"]}>
+        <div className="standart_room">
             <Image
-                width={100}
-                height={100}
+                width={500}
+                height={272}
                 src='/img/standart_room.png'
                 alt='Кімната Стандарт'
             />
@@ -19,8 +19,8 @@ const StandartRoom: FC = () => {
                 вас. Відпочинок, комфорт та неперевершений<br/>
                 сервіс - ваші найближчі сусіди тут.
             </p>
-            <p className="price-text-standart">Ціна від 1400 ₴</p>
-            <button className="detail-button">Детальніше</button>
+            <p className="price_text_standart">Ціна від 1400 ₴</p>
+            <button className="detail_button_standart">Детальніше</button>
         </div>
     );
 }

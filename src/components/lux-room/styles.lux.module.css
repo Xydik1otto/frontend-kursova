@@ -17,14 +17,13 @@
     object-fit: cover;
     object-position: center;
 }
-
 .room_class_lux {
     color: #ffffff;
     text-align: left;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 24px;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 20px;
 }
 .room_desc_lux {
@@ -33,10 +32,9 @@
     font-weight: 500;
     font-size: 16px;
     text-align: left;
-    padding-top: 10px;
     padding-left: 20px;
 }
-.detail-button {
+.detail_button_lux {
     width: 220px;
     height: 40px;
     background-color: white;
@@ -48,7 +46,7 @@
     bottom: 30px;
     left: 30px;
 }
-.price-text-lux {
+.price_text_lux {
     color: white;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;

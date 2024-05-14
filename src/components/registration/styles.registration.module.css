@@ -1,6 +1,6 @@
 .registration {
     width: 600px;
-    height: 640px;
+    height: 540px;
     background-color: #35302C;
     border-radius: 40px;
     position: absolute;
@@ -66,10 +66,15 @@ input {
     left: 140px;
     top: 301px;
 }
-.reg_input_password {
+.reg_input_number {
     position: absolute;
     left: 140px;
     top: 349px;
+}
+.reg_input_password {
+    position: absolute;
+    left: 140px;
+    top: 397px;
 }
 .reg_button {
     width: 180px;
@@ -81,7 +86,7 @@ input {
     font-size: 12px;
     border-radius: 15px;
     position: absolute;
-    top: 391px;
+    top: 445px;
     left: 209px;
 }
 .reg_have_account {
@@ -90,85 +95,6 @@ input {
     font-weight: 600;
     font-size: 8px;
     position: absolute;
-    top: 425px;
+    top: 480px;
     left: 240px;
-}
-a {
-    color: #ffffff;
-    text-decoration: underline;
-}
-ins {
-    text-decoration: line-through;
-}
-del {
-    text-decoration: underline;
-}
-.horizontal-line1 {
-    width: 197px;
-    height: 1px;
-    background-color: white;
-    position: absolute;
-    top: 491px;
-    left: 8px;
-    border-radius: 1px;
-}
-.horizontal-line2 {
-    width: 197px;
-    height: 1px;
-    background-color: white;
-    position: absolute;
-    top: 491px;
-    left: 395px;
-    border-radius: 1px;
-}
-.reg_alternative {
-    color: #ffffff;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    position: absolute;
-    top: 471px;
-    left: 212px;
-}
-.reg_google_link {
-    width: 168px;
-    height: 24px;
-    background-color: white;
-    color: black;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 600;
-    font-size: 8px;
-    border-radius: 12px;
-    display: inline-block;
-    text-align: center;
-    line-height: 24px;
-    text-decoration: none;
-    position: absolute;
-    background-image: url('public/svg/google.svg');
-    background-repeat: no-repeat;
-    background-size: 14px;
-    background-position: 10px center;
-    left: 216px;
-    top: 526px;
-}
-.reg_facebook_link {
-    width: 168px;
-    height: 24px;
-    background-color: white;
-    color: black;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 600;
-    font-size: 8px;
-    border-radius: 12px;
-    display: inline-block;
-    text-align: center;
-    line-height: 24px;
-    text-decoration: none;
-    position: absolute;
-    background-image: url('public/svg/facebook.svg');
-    background-repeat: no-repeat;
-    background-size: 14px;
-    background-position: 10px center;
-    left: 216px;
-    top: 557px;
 }

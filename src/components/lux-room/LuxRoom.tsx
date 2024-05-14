@@ -6,10 +6,10 @@ import styles from './styles.lux.module.css';
 
 const LuxRoom: FC = () => {
     return (
-        <div className={styles["lux_room"]}>
+        <div className="lux_room">
             <Image
-                width={100}
-                height={100}
+                width={500}
+                height={272}
                 src='/img/lux_room.png'
                 alt='Кімната Люкс'
             />
@@ -19,8 +19,8 @@ const LuxRoom: FC = () => {
                 вибагливих гостей, які цінують бездоганний <br/>
                 сервіс та неперевершений комфорт.
             </p>
-            <p className="price-text-lux">Ціна від 2800 ₴</p>
-            <button className="detail-button">Детальніше</button>
+            <p className="price_text_lux">Ціна від 2800 ₴</p>
+            <button className="detail_button_lux">Детальніше</button>
         </div>
     );
 }

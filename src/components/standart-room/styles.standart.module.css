@@ -23,7 +23,7 @@
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 24px;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 20px;
 }
 .room_desc_standart {
@@ -32,10 +32,9 @@
     font-weight: 500;
     font-size: 16px;
     text-align: left;
-    padding-top: 10px;
     padding-left: 20px;
 }
-.detail-button {
+.detail_button_standart {
     width: 220px;
     height: 40px;
     background-color: white;
@@ -47,7 +46,7 @@
     bottom: 30px;
     left: 30px;
 }
-.price-text-standart {
+.price_text_standart {
     color: white;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;

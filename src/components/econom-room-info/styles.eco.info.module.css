@@ -1,9 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-/* ---------- Номер Економ ---------- */
-.eco_room {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.eco_room_info {
     width: 500px;
     height: 580px;
     background-color: #35302C;
@@ -13,35 +9,33 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.eco_room img {
+.eco_room_info img {
     display: block;
     width: 500px;
     height: 272px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    object-fit: cover; /* Обрізає зображення до розмірів контейнера, зберігаючи пропорції і заповнюючи його */
-    object-position: center; /* Центрує зображення всередині контейнера */
+    object-fit: cover;
+    object-position: center;
 }
-
-.room_class_eco {
+.room_class_eco_info {
     color: #ffffff;
     text-align: left;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 24px;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 20px;
 }
-.room_desc_eco {
+.room_desc_eco_info {
     color: #ffffff;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 16px;
     text-align: left;
-    padding-top: 10px;
     padding-left: 20px;
 }
-.detail-button {
+.detail_button_info {
     width: 220px;
     height: 40px;
     background-color: white;
@@ -54,7 +48,7 @@
     bottom: 30px;
     left: 30px;
 }
-.price-text-eco {
+.price_text_eco_info {
     color: white;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
@@ -63,85 +57,87 @@
     bottom: 42px;
     right: 61px;
 }
-.horizontal-line1 {
-    width: 462px; /* ширина лінії */
-    height: 1px; /* висота лінії */
+.horizontal_line1_info {
+    width: 462px;
+    height: 1px;
     background-color: white;
     position: absolute;
-    top: 372px;
+    top: 392px;
     left: 19px;
     border-radius: 1px;
 }
-.horizontal-line2 {
-    width: 462px; /* ширина лінії */
-    height: 1px; /* висота лінії */
+.horizontal_line2_info {
+    width: 462px;
+    height: 1px;
     background-color: white;
     position: absolute;
-    top: 462px;
+    top: 482px;
     left: 19px;
     border-radius: 1px;
 }
-.room_stats_eco {
+.room_stats_eco_info {
+    position: absolute;
     color: #ffffff;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 12px;
-    padding-top: 30px;
+    top: 406px;
     padding-left: 151px;
     display: flex;
 }
-.room_size_eco_icon img {
+.room_size_eco_icon_info img {
     display: block;
-    width: 20px; /* задайте ширину */
-    height: 20px; /* автоматично розрахувати висоту для збереження пропорцій */
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 386px;
+    top: 404px;
     left: 124px;
     border-radius: 0px;
 }
-.room_benefits_eco {
+.room_benefits_eco_info {
+
     color: #ffffff;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 12px;
     position: absolute;
-    padding-top: 30px;
+    top: 455px;
     left: 124px;
     display: flex;
 }
-.room_persons_eco_icon img {
-    width: 11px; /* задайте ширину */
-    height: 20px; /* автоматично розрахувати висоту для збереження пропорцій */
+.room_persons_eco_icon_info img {
+    width: 11px;
+    height: 20px;
     position: absolute;
     display: block;
-    top: 387px;
+    top: 405px;
     left: 353px;
     border-radius: 0px;
 }
-.room_conditioning_eco_icon img {
-    width: 20px; /* задайте ширину */
-    height: 20px; /* автоматично розрахувати висоту для збереження пропорцій */
+.room_conditioning_eco_icon_info img {
+    width: 20px;
+    height: 20px;
     position: absolute;
     display: block;
     left: 96px;
-    top: 431px;
+    top: 453px;
     border-radius: 0px;
 }
-.room_eye_eco_icon img {
-    width: 20px; /* задайте ширину */
-    height: 12.7px; /* автоматично розрахувати висоту для збереження пропорцій */
+.room_eye_eco_icon_info img {
+    width: 20px;
+    height: 12.7px;
     position: absolute;
     display: block;
     left: 236px;
-    top: 436px;
+    top: 457px;
     border-radius: 0px;
 }
-.room_wifi_eco_icon img {
-    width: 20px; /* задайте ширину */
-    height: 16.5px; /* автоматично розрахувати висоту для збереження пропорцій */
+.room_wifi_eco_icon_info img {
+    width: 20px;
+    height: 16.5px;
     position: absolute;
     display: block;
     left: 338px;
-    top: 433px;
+    top: 455px;
     border-radius: 0px;
 }

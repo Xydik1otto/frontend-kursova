@@ -1,6 +1,6 @@
 .login {
     width: 600px;
-    height: 500px;
+    height: 410px;
     background-color: #35302C;
     border-radius: 40px;
     position: absolute;
@@ -92,24 +92,6 @@ ins {
 del {
     text-decoration: underline;
 }
-.horizontal-line1 {
-    width: 207px;
-    height: 1px;
-    background-color: white;
-    position: absolute;
-    top: 371px;
-    left: 8px;
-    border-radius: 1px;
-}
-.horizontal-line2 {
-    width: 207px;
-    height: 1px;
-    background-color: white;
-    position: absolute;
-    top: 372px;
-    left: 383px;
-    border-radius: 1px;
-}
 .log_alternative {
     color: #ffffff;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -119,48 +101,7 @@ del {
     top: 352px;
     left: 226px;
 }
-.log_google_link {
-    width: 168px;
-    height: 24px;
-    background-color: white;
-    color: black;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 600;
-    font-size: 8px;
-    border-radius: 12px;
-    display: inline-block;
-    text-align: center;
-    line-height: 24px;
-    text-decoration: none;
-    position: absolute;
-    background-image: url('public/svg/google.svg');
-    background-repeat: no-repeat;
-    background-size: 14px;
-    background-position: 10px center;
-    left: 216px;
-    top: 404px;
-}
-.log_facebook_link {
-    width: 168px;
-    height: 24px;
-    background-color: white;
-    color: black;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 600;
-    font-size: 8px;
-    border-radius: 12px;
-    display: inline-block;
-    text-align: center;
-    line-height: 24px;
-    text-decoration: none;
-    position: absolute;
-    background-image: url('public/svg/facebook.svg');
-    background-repeat: no-repeat;
-    background-size: 14px;
-    background-position: 10px center;
-    left: 216px;
-    top: 435px;
-}
+
 .log_lost_password {
     color: #ffffff;
     font-family: 'Montserrat Alternates', sans-serif;
