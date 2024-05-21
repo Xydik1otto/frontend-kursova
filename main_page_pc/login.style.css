@@ -24,22 +24,7 @@
     font-size: 12px;
     margin-top: 18px;
 }
-::placeholder {
-    color: #AFAFAF;
-    text-align: left;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-}
-:active, :hover, :focus {
-    outline: 0;
-    outline-offset: 0;
-}
-input {
-    font-family: 'Montserrat Alternates', sans-serif;
-    background: transparent;
-    border: none;
-}
+
 .log_input input {
     color: #ffffff;
     text-align: left;
@@ -55,10 +40,24 @@ input {
     left: 140px;
     top: 192px;
 }
+.email_placeholder::placeholder {
+    color: #AFAFAF;
+    text-align: left;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
 .log_input_password {
     position: absolute;
     left: 140px;
     top: 240px;
+}
+.password_placeholder::placeholder {
+    color: #AFAFAF;
+    text-align: left;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
 }
 .log_button {
     width: 180px;
@@ -82,84 +81,11 @@ input {
     top: 316px;
     left: 215px;
 }
-a {
-    color: #ffffff;
-    text-decoration: underline;
-}
-ins {
-    text-decoration: line-through;
-}
-del {
-    text-decoration: underline;
-}
-.horizontal-line1 {
-    width: 207px;
-    height: 1px;
-    background-color: white;
-    position: absolute;
-    top: 371px;
-    left: 8px;
-    border-radius: 1px;
-}
-.horizontal-line2 {
-    width: 207px;
-    height: 1px;
-    background-color: white;
-    position: absolute;
-    top: 372px;
-    left: 383px;
-    border-radius: 1px;
-}
-.log_alternative {
+.log_have_account a {
     color: #ffffff;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
-    font-size: 12px;
-    position: absolute;
-    top: 352px;
-    left: 226px;
-}
-.log_google_link {
-    width: 168px;
-    height: 24px;
-    background-color: white;
-    color: black;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 600;
     font-size: 8px;
-    border-radius: 12px;
-    display: inline-block;
-    text-align: center;
-    line-height: 24px;
-    text-decoration: none;
-    position: absolute;
-    background-image: url('public/svg/google.svg');
-    background-repeat: no-repeat;
-    background-size: 14px;
-    background-position: 10px center;
-    left: 216px;
-    top: 404px;
-}
-.log_facebook_link {
-    width: 168px;
-    height: 24px;
-    background-color: white;
-    color: black;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 600;
-    font-size: 8px;
-    border-radius: 12px;
-    display: inline-block;
-    text-align: center;
-    line-height: 24px;
-    text-decoration: none;
-    position: absolute;
-    background-image: url('public/svg/facebook.svg');
-    background-repeat: no-repeat;
-    background-size: 14px;
-    background-position: 10px center;
-    left: 216px;
-    top: 435px;
 }
 .log_lost_password {
     color: #ffffff;
@@ -169,4 +95,13 @@ del {
     position: absolute;
     top: 266px;
     left: 255px;
+}
+:active, :hover, :focus {
+     outline: 0;
+     outline-offset: 0;
+ }
+input {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background: transparent;
+    border: none;
 }

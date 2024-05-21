@@ -6,18 +6,20 @@ import styles from './styles.main.info.module.css';
 
 const MainInfo: FC = () => {
     return (
-        <div className="main_info">
+        <div className={styles["main_info"]}>
             <Image
-                width={100}
-                height={100}
+                width={452}
+                height={534}
                 src='/img/main_info_img.png'
                 alt='Інформаційний блок'
             />
-            <p className="main_info">Готель у серці<br/> Карпат</p>
-            <p>
+            <p className={styles["main_info_title"]}>Готель у серці<br/> Карпат</p>
+            <p className={styles["main_info_subtitle"]}>
                 Ласкаво запрошуємо до Solar.is –<br/>
-                - чарівного готельно-ресторанного<br/> комплексу, який розташований у<br/> затишному куточку серця Карпат.<br/>
-                Наші дерев'яні котеджі занурять вас у<br/> атмосферу спокою і комфорту, де<br/> кожен момент стає особливим.
+                - чарівного готельно-ресторанного<br/> комплексу, який розташований у<br/> затишному куточку серця
+                Карпат.<br/>
+                Наші дерев'яні котеджі занурять вас у<br/> атмосферу спокою і комфорту, де<br/> кожен момент стає
+                особливим.
             </p>
         </div>
     );

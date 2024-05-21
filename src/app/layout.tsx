@@ -6,7 +6,7 @@ import "./globals.css";
 import type {Metadata, NextPage} from "next";
 
 const montserrat = Montserrat_Alternates({
-    weight: ['400', '500', '600'],
+    weight: ['300', '400', '500', '600', '700', '800', '900'],
     preload: true,
     subsets: ['latin']
 });

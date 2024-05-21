@@ -1,0 +1,129 @@
+.reviews {
+    width: 1440px;
+    height: 380px;
+    background-color: #35302C;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.reviews_title {
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    position: absolute;
+    padding-top: 22px;
+    padding-left: 669px;
+    text-align: center;
+}
+.reviews_main {
+    width: 520px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+    top: 80px;
+    left: 460px;
+}
+.reviews_username {
+    display: block;
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+    padding-top: 24px;
+    padding-left: 16px;
+}
+.reviews_rating_desc {
+    width: 70px;
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+    padding-top: 2px;
+    padding-left: 16px;
+}
+.reviews_rating {
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+    padding-top: 2px;
+}
+.reviews_rating_total {
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+    padding-top: 2px;
+}
+.reviews_overall {
+    display: flex;
+}
+.reviews_comment_title {
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+}
+.reviews_comment {
+    width: 488px;
+    height: 120px;
+    color: black;
+    font-weight: 500;
+    font-size: 10px;
+    padding-left: 28px;
+    display: block;
+}
+.detail_button_review {
+    width: 220px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+    position: absolute;
+    cursor: pointer;
+}
+.review_button {
+    width: 1440px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.review_button_left {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.review_button_left img {
+    width: 12px;
+    height: 25px;
+    margin-left: 17px;
+}
+.review_left {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -72px;
+    top: 85px;
+}
+.review_button_right {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.review_button_right img {
+    width: 12px;
+    height: 25px;
+    margin-left: 21px;
+}
+.review_right {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 542px;
+    top: 85px;
+}

@@ -1,7 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 .discount {
     width: 844px;
     height: 360px;
@@ -29,7 +25,6 @@
 .discount_name {
     color: #AFAFAF;
     text-align: left;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 18px;
     padding-top: 39px;
@@ -37,22 +32,20 @@
 }
 .discount_propose {
     color: #ffffff;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
     font-size: 20px;
     padding-top: 9px;
     padding-left: 362px;
 }
 .discount_desc {
-     color: white;
-     font-family: 'Montserrat Alternates', sans-serif;
-     font-weight: 500;
-     font-size: 16px;
-     position: absolute;
-     padding-top: 25px;
-     padding-left: 355px;
-     text-align: center;
- }
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 355px;
+    text-align: center;
+}
 .detail_button_discount {
     width: 220px;
     height: 40px;
@@ -62,7 +55,7 @@
     font-size: 16px;
     border-radius: 10px;
     position: absolute;
-    bottom: 77px;
+    bottom: 50px;
     left: 382px;
     cursor: pointer;
 }
@@ -76,8 +69,7 @@
 .discount_button_left img {
     width: 12px;
     height: 25px;
-    padding-right: 3px;
-    padding-top: 3px;
+    margin-left: 17px;
 }
 .discount_button_right {
     width: 50px;
@@ -89,20 +81,17 @@
 .discount_button_right img {
     width: 12px;
     height: 25px;
-    padding-left: 3px;
-    padding-top: 3px;
+    margin-left: 21px;
 }
 .discount_right {
     width: 50px;
     height: 50px;
-    position: absolute;
-    top: 155px;
-    left: 794px;
+    padding-top: 155px;
+    margin-left: 22px;
 }
 .discount_left {
     width: 50px;
     height: 50px;
-    position: absolute;
-    top: 155px;
-    left: 0px;
+    padding-top: 155px;
+    margin-right: 22px;
 }

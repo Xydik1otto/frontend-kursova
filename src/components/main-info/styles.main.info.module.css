@@ -4,10 +4,7 @@
     background-color: #35302C;
     border-top-left-radius: 80px;
     border-bottom-left-radius: 80px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
 }
 .main_info img {
     display: block;
@@ -18,17 +15,15 @@
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-.main_info p:first-of-type {
+.main_info_title {
     color: #ffffff;
     text-align: center;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
     font-size: 24px;
     padding-top: 126px;
 }
-.main_info p:last-of-type {
+.main_info_subtitle {
     color: #ffffff;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 16px;
     text-align: left;

@@ -3,10 +3,7 @@
     height: 480px;
     background-color: #35302C;
     border-radius: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
 }
 .standart_room img {
     display: block;
@@ -20,7 +17,6 @@
 .room_class_standart {
     color: #ffffff;
     text-align: left;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 24px;
     padding-top: 5px;
@@ -28,7 +24,6 @@
 }
 .room_desc_standart {
     color: #ffffff;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 16px;
     text-align: left;
@@ -48,7 +43,6 @@
 }
 .price_text_standart {
     color: white;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
     font-size: 14px;
     position: absolute;

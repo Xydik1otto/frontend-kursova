@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .eco_room_info {
     width: 500px;
     height: 580px;
     background-color: #35302C;
     border-radius: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
 }
 .eco_room_info img {
     display: block;
@@ -21,7 +17,6 @@
 .room_class_eco_info {
     color: #ffffff;
     text-align: left;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 24px;
     padding-top: 5px;
@@ -29,7 +24,6 @@
 }
 .room_desc_eco_info {
     color: #ffffff;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 16px;
     text-align: left;
@@ -40,7 +34,6 @@
     height: 40px;
     background-color: white;
     color: black;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
     font-size: 16px;
     border-radius: 10px;
@@ -50,7 +43,6 @@
 }
 .price_text_eco_info {
     color: white;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
     font-size: 14px;
     position: absolute;
@@ -78,7 +70,6 @@
 .room_stats_eco_info {
     position: absolute;
     color: #ffffff;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 12px;
     top: 406px;
@@ -97,7 +88,6 @@
 .room_benefits_eco_info {
 
     color: #ffffff;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 12px;
     position: absolute;

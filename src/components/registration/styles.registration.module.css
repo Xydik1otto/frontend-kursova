@@ -3,85 +3,97 @@
     height: 540px;
     background-color: #35302C;
     border-radius: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    padding-top: 57px;
 }
 .reg_title {
     color: #ffffff;
     text-align: center;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
     font-size: 24px;
-    margin-top: 57px;
 }
 .reg_subtitle {
     color: #AFAFAF;
     text-align: center;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
     font-size: 12px;
     margin-top: 18px;
 }
-::placeholder {
+.reg_input_number input[type="text"],
+.reg_input_surname input[type="text"],
+.reg_input_name input[type="text"],
+.reg_input_email input[type="email"],
+.reg_input_password input[type="password"] {
+    background: transparent;
+    border: none;
+}
+.reg_input_number input[type="text"]::placeholder,
+.reg_input_surname input[type="text"]::placeholder,
+.reg_input_name input[type="text"]::placeholder,
+.reg_input_email input[type="email"]::placeholder,
+.reg_input_password input[type="password"]::placeholder {
     color: #AFAFAF;
     text-align: left;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
     font-size: 12px;
+}
+.reg_input_number input[type="text"]:hover,
+.reg_input_number input[type="text"]:focus,
+.reg_input_surname input[type="text"]:hover,
+.reg_input_surname input[type="text"]:focus,
+.reg_input_name input[type="text"]:hover,
+.reg_input_name input[type="text"]:focus,
+.reg_input_email input[type="email"]:hover,
+.reg_input_email input[type="email"]:focus,
+.reg_input_password input[type="password"]:hover,
+.reg_input_password input[type="password"]:focus {
+    outline: 0;
+    outline-offset: 0;
 }
 .reg_input_name {
     border: none;
     position: absolute;
     left: 140px;
     top: 205px;
-}
-:active, :hover, :focus {
-    outline: 0;
-    outline-offset: 0;
-}
-input {
-    font-family: 'Montserrat Alternates', sans-serif;
-    background: transparent;
-    border: none;
+    border-bottom: 1px solid #ffffff;
 }
 .reg_input input {
     color: #ffffff;
     text-align: left;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 12px;
     width: 320px;
     height: 20px;
-    border-bottom: 1px solid #ffffff;
 }
 .reg_input_surname {
     position: absolute;
     left: 140px;
     top: 253px;
+    border-bottom: 1px solid #ffffff;
 }
 .reg_input_email {
     position: absolute;
     left: 140px;
     top: 301px;
+    border-bottom: 1px solid #ffffff;
 }
 .reg_input_number {
     position: absolute;
     left: 140px;
     top: 349px;
+    border-bottom: 1px solid #ffffff;
 }
 .reg_input_password {
     position: absolute;
     left: 140px;
     top: 397px;
+    border-bottom: 1px solid #ffffff;
 }
 .reg_button {
     width: 180px;
     height: 30px;
     background-color: white;
     color: black;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
     font-size: 12px;
     border-radius: 15px;
@@ -91,7 +103,6 @@ input {
 }
 .reg_have_account {
     color: #ffffff;
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
     font-size: 8px;
     position: absolute;

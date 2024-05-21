@@ -1,0 +1,107 @@
+.footer {
+    background-color: #35302C;
+    width: 1440px;
+    height: 300px;
+    position: relative;
+    display: flex;
+}
+.footer_logo img {
+    margin-top: 38px;
+    margin-left: 280px;
+    width: 140px;
+    height: 140px;
+}
+.footer_name{
+    color: #AFAFAF;
+    font-weight: 500;
+    font-size: 24px;
+    padding-left: 307px;
+    padding-top: 15px;
+}
+.footer_title {
+    position: relative;
+    display: flex;
+    margin-top: 38px;
+    margin-left: 99px;
+    width: 535px;
+    height: 29px;
+}
+.footer_hotel_desc {
+    font-weight: 500;
+    font-size: 24px;
+    margin-right: 84px;
+    width: 305px;
+    height: 29px;
+}
+.footer_contacts {
+    font-weight: 500;
+    font-size: 24px;
+}
+.footer_subtitle_hotel {
+    position: absolute;
+    top: 107px;
+    left: 519px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AFAFAF;
+    display: flex;
+    flex-direction: column;
+}
+.footer_about_hotel {
+    margin-bottom: 11px;
+}
+.footer_action {
+    margin-bottom: 11px;
+}
+.footer_rooms {
+    margin-bottom: 11px;
+}
+.footer_subtitle_contacts {
+    position: absolute;
+    top: 107px;
+    left: 908px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AFAFAF;
+    display: flex;
+    flex-direction: column;
+}
+.footer_adress {
+    margin-bottom: 11px;
+}
+.footer_mail {
+    margin-bottom: 11px;
+}
+.footer_telephone {
+    margin-bottom: 11px;
+}
+.footer_social {
+    display: flex;
+}
+.footer_social {
+    align-items: center;
+}
+.footer_inst {
+    margin-right: 14px;
+}
+.footer_facebook {
+    margin-right: 14px;
+}
+.footer_twitter {
+    margin-right: 14px;
+}
+.footer_privacy {
+    width: 1440px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #262626;
+    position: absolute;
+    top: 262px;
+}
+.footer_privacy {
+    color: white;
+    font-size: 16px;
+    padding-top: 9px;
+}
