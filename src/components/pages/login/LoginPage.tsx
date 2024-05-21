@@ -3,6 +3,7 @@ import { FC } from 'react';
 import Image from 'next/image';
 // Styles
 import styles from './styles.login.page.module.css';
+import Link from "next/link";
 
 const LoginPage: FC = () => {
     return (
@@ -28,7 +29,11 @@ const LoginPage: FC = () => {
                         </div>
                     </div>
                     <button className={styles["log_button"]}>Увійти</button>
-                    <p className={styles["log_have_account"]}>Не маєте аккаунта? <a href="URL">Створіть його!</a></p>
+                    <p className={styles["log_have_account"]}>Не маєте аккаунта?
+                        <Link href='/registration'>
+                            Створіть його!
+                        </Link>
+                    </p>
                     <a className={styles["log_lost_password"]} href="URL">Забули свій пароль?</a>
                 </div>
             </div>

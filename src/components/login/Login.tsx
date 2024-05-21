@@ -26,7 +26,9 @@ const Login: FC = () => {
                 </div>
             </div>
             <button className={styles["log_button"]}>Увійти</button>
-            <p className={styles["log_have_account"]}>Не маєте аккаунта? <a href="URL">Створіть його!</a></p>
+            <p className={styles["log_have_account"]}>Не маєте аккаунта?
+                <a href="URL">Створіть його!</a>
+            </p>
             <a className={styles["log_lost_password"]} href="URL">Забули свій пароль?</a>
         </div>
     );
