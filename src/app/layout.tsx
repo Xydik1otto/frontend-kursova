@@ -4,6 +4,9 @@ import {Montserrat_Alternates} from "next/font/google";
 import "./globals.css";
 // Types
 import type {Metadata, NextPage} from "next";
+// Components
+import Header from '@/components/header/Header';
+import Footer from '@/components/footer/Footer';
 
 const montserrat = Montserrat_Alternates({
     weight: ['300', '400', '500', '600', '700', '800', '900'],
@@ -18,9 +21,10 @@ export const metadata: Metadata = {
 
 const RootLayout: NextPage<OnlyChildrenType> = ({children}) =>
     <html lang="en">
-        <body className={montserrat['className']}>
-            {children}
-        </body>
+    <body className={montserrat['className']}>
+        <Header/>
+        {children}
+    </body>
     </html>
 
 export default RootLayout;

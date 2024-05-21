@@ -4,34 +4,9 @@ import Image from 'next/image';
 // Styles
 import styles from './styles.main.module.css';
 
-const Main_page: FC = () => {
+const MainPage: FC = () => {
     return (
         <div className={styles["main_page"]}>
-            <header>
-                <div className={styles["header_position"]}>
-                    <div className={styles["header"]}>
-                        <a className={styles["header_main"]} href="https://www.youtube.com">
-                            <img src="/svg/header_home.svg" alt="Головна"/>
-                            <p>Головна</p>
-                        </a>
-                        <a className={styles["header_restaurant"]} href="https://www.youtube.com">
-                            <img src="/svg/header_restaurant.svg" alt="Ресторан"/>
-                            <p>Ресторан</p>
-                        </a>
-                        <a className={styles["header_logo"]} href="https://www.youtube.com">
-                            <img src="/svg/header_logo.svg" alt="Логотип"/>
-                        </a>
-                        <div className={styles["header_number"]}>
-                            <img src="/svg/header_number.svg" alt="Номер"/>
-                            <p>+380777777777</p>
-                        </div>
-                        <a className={styles["header_account"]} href="https://www.youtube.com">
-                            <img src="/svg/header_account.svg" alt="Аккаунт"/>
-                            <p>Аккаунт</p>
-                        </a>
-                    </div>
-                </div>
-            </header>
             <div className={styles["main_page_photo"]}>
                 <img src="/img/main_page_photo.png" alt="solar.is"/>
             </div>
@@ -209,4 +184,4 @@ const Main_page: FC = () => {
         </div>
     );
 }
-export default Main_page;
+export default MainPage;
