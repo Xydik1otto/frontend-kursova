@@ -1,0 +1,62 @@
+.user_room {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.user_room_body {
+    width: 710px;
+    height: 191px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+}
+.user_room_body img {
+    width: 252px;
+    height: 191px;
+    background: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.user_room_info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.user_room_title {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 21px;
+    margin-left: 29px;
+    text-align: left;
+}
+.user_room_subtitle {
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 6px;
+    margin-left: 29px;
+    text-align: left;
+}
+.user_room_date {
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-left: 29px;
+    text-align: left;
+}
+.user_room_date_title {
+    display: flex;
+    margin-left: 29px;
+    margin-top: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+}
+.user_room_date_end {
+    margin-left: 4px;
+}

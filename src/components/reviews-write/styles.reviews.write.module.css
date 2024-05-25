@@ -1,0 +1,125 @@
+.reviews_write {
+    width: 800px;
+    height: 530px;
+    background-color: white;
+    position: relative;
+    text-align: center;
+    display: flex;
+    border-radius: 30px;
+    margin-top: 100px;
+    flex-direction: column;
+}
+.reviews_write_title {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    margin-top: 29px;
+}
+.reviews_write_rating {
+    display: flex;
+    margin-top: 53px;
+    text-align: left;
+}
+.rating_desc {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-left: 50px;
+}
+.rating_buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+}
+.rating_buttons p {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+.rating_1 {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+.rating_2 {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid black;
+    margin-left: 6px;
+}
+.rating_3 {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid black;
+    margin-left: 6px;
+}
+.rating_4 {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid black;
+    margin-left: 6px;
+}
+.rating_5 {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid black;
+    margin-left: 6px;
+}
+.writing_text_title {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 29px;
+}
+.writing_text_title p {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+.writing_review_text {
+    width: 700px;
+    height: 220px;
+    background-color: white;
+    border: 1px solid black;
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 11px;
+}
+.writing_review_text textarea {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    width: 665px;
+    height: 185px;
+    border: none;
+}
+.writing_review_text textarea:hover,
+.writing_review_text textarea:focus{
+    border: none;
+    outline: 0;
+    outline-offset: 0;
+}
+.button_send_area {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 31px;
+}
+.button_send {
+    background-color: #35302C;
+    border-radius: 22px;
+    width: 200px;
+    height: 44px;
+}
+.button_send p {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}

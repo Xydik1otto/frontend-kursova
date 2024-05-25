@@ -1,0 +1,309 @@
+.footer {
+    background-color: #35302C;
+    width: 100%;
+    height: 262px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    bottom: 0
+}
+.footer_logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.footer_logo img {
+    margin-top: 38px;
+    width: 140px;
+    height: 140px;
+}
+.footer_name{
+    color: #AFAFAF;
+    font-weight: 500;
+    font-size: 24px;
+    padding-top: 15px;
+}
+.footer_title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 38px;
+    margin-left: 99px;
+}
+.footer_hotel_desc {
+    font-weight: 500;
+    font-size: 24px;
+    margin-right: 84px;
+    margin-bottom: 40px;
+    height: 29px;
+    text-align: left;
+    width: auto;
+    color: white;
+}
+.footer_contacts {
+    font-weight: 500;
+    color: white;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.footer_subtitle_hotel {
+    font-weight: 500;
+    font-size: 16px;
+    color: #AFAFAF;
+    display: flex;
+    flex-direction: column;
+    margin-left: 99px;
+    margin-top: 38px;
+}
+.footer_about_hotel {
+    margin-bottom: 11px;
+    text-align: left;
+    color: #AFAFAF;
+}
+.footer_action {
+    margin-bottom: 11px;
+    text-align: left;
+    color: #AFAFAF;
+}
+.footer_rooms {
+    margin-bottom: 11px;
+    text-align: left;
+    color: #AFAFAF;
+}
+.footer_reviews {
+    text-align: left;
+    color: #AFAFAF;
+}
+.footer_subtitle_contacts {
+    margin-top: 38px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AFAFAF;
+    display: flex;
+    flex-direction: column;
+}
+.footer_adress {
+    margin-bottom: 11px;
+    text-align: left;
+}
+.footer_mail {
+    margin-bottom: 11px;
+    text-align: left;
+}
+.footer_telephone {
+    margin-bottom: 11px;
+    text-align: left;
+}
+.footer_social {
+    display: flex;
+}
+.footer_social {
+    align-items: center;
+}
+.footer_inst {
+    margin-right: 14px;
+}
+.footer_facebook {
+    margin-right: 14px;
+}
+.footer_twitter {
+    margin-right: 14px;
+}
+.user_page {
+    width: auto;
+    height: calc(100vh - 100px);
+    background: #C5B4B4;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.user_body {
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.user {
+    width: 800px;
+    height: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    border-radius: 30px;
+    background-color: #35302C;
+}
+.user_title {
+    margin-top: 41px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.user_data {
+    margin-top: 56px;
+    margin-left: 43px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.user_name {
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    width: 714px;
+    height: 47px;
+    align-items: center;
+}
+.user_name_data {
+    margin-left: 88px;
+    font-weight: 500;
+}
+.user_surname {
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+    width: 714px;
+    height: 47px;
+    align-items: center;
+}
+.user_surname_data {
+    margin-left: 37px;
+    font-weight: 500;
+}
+.user_email {
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+    width: 714px;
+    height: 47px;
+    align-items: center;
+}
+.user_email_data {
+    margin-left: 54px;
+    font-weight: 500;
+}
+.user_number {
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+    width: 714px;
+    height: 47px;
+    align-items: center;
+}
+.user_number_data {
+    margin-left: 46px;
+    font-weight: 500;
+}
+.user_password {
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+    width: 714px;
+    height: 47px;
+    align-items: center;
+}
+.user_password_data {
+    margin-left: 56px;
+    font-weight: 500;
+}
+.user_button {
+    position: relative;
+    display: flex;
+    margin-top: 27px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.user_redactor {
+    width: 200px;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+}
+.user_logout {
+    width: 200px;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 40px;
+}
+.user_redactor p {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+.user_logout p {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+.user_room {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.user_room_body {
+    width: 710px;
+    height: 191px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+}
+.user_room_body img {
+    width: 252px;
+    height: 191px;
+    background: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.user_room_info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.user_room_title {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 21px;
+    margin-left: 29px;
+    text-align: left;
+}
+.user_room_subtitle {
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 6px;
+    margin-left: 29px;
+    text-align: left;
+}
+.user_room_date {
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-left: 29px;
+    text-align: left;
+}
+.user_room_date_title {
+    display: flex;
+    margin-left: 29px;
+    margin-top: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+}
+.user_room_date_end {
+    margin-left: 4px;
+}

@@ -27,13 +27,10 @@ const LoginPage: FC = () => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-
             const data = await response.json();
             console.log('Login successful:', data);
-            // Обробка успішного входу
         } catch (error) {
             console.error('There was a problem with the login request:', error);
-            // Обробка помилки входу
         }
     };
 

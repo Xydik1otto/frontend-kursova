@@ -1,0 +1,38 @@
+.message_body {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.message_title {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-top: 59px;
+}
+.message_success {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    margin-top: 31px;
+    width: 390px;
+    height: 51px;
+}
+.message_button {
+    width: 68px;
+    height: 34px;
+    background-color: #35302C;
+    border-radius: 10px;
+    margin-top: 70px;
+}
+.message_button p {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}

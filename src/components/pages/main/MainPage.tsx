@@ -92,6 +92,7 @@ const MainPage: FC = () => {
                         width={500}
                         height={272}
                         src='/img/comfort_room.png'
+
                         alt='Кімната Комфорт'
                     />
                     <p className={styles["room_class_comfort"]}>Комфорт</p>
