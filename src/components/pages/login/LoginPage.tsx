@@ -78,21 +78,23 @@ const LoginPage: FC = () => {
                 </div>
                 <div className={styles["footer_subtitle_contacts"]}>
                     <p className={styles["footer_contacts"]}>Контакти</p>
-                    <a className={styles["footer_adress"]} href="https://www.youtube.com">Ужгород, вул.Загорська 12</a>
-                    <a className={styles["footer_mail"]} href="https://www.youtube.com">solar.is.dachakovera@gmail.com</a>
-                    <a className={styles["footer_telephone"]} href="https://www.youtube.com">+380777777777</a>
+                    <a className={styles["footer_adress"]}
+                       href="https://maps.app.goo.gl/m2Y9X4RcSXV7x53p6">Ужгород, пров.Минайський 7</a>
+                    <a className={styles["footer_mail"]}
+                       href="https://mail.google.com/mail/u/0/?authuser=volkovskiy22@gmail.com">solar.is.dachakovera@gmail.com</a>
+                    <a className={styles["footer_telephone"]} href="tel:+380637191493">+380637191493</a>
                     <div className={styles["footer_social"]}>
-                        <a className={styles["footer_inst"]} href="https://www.youtube.com">
-                            <img src="/svg/footer_insta.svg" alt="Інстаграм" />
+                        <a className={styles["footer_inst"]} href="https://www.instagram.com/solaris_dacha/">
+                            <img src="/svg/footer_insta.svg" alt="Інстаграм"/>
                         </a>
-                        <a className={styles["footer_facebook"]} href="https://www.youtube.com">
-                            <img src="/svg/footer_facebook.svg" alt="Фейсбук" />
+                        <a className={styles["footer_facebook"]} href="https://www.instagram.com/solaris_dacha/">
+                            <img src="/svg/footer_facebook.svg" alt="Фейсбук"/>
                         </a>
-                        <a className={styles["footer_twitter"]} href="https://www.youtube.com">
-                            <img src="/svg/footer_twitter.svg" alt="Твіттер" />
+                        <a className={styles["footer_twitter"]} href="https://www.instagram.com/solaris_dacha/">
+                            <img src="/svg/footer_twitter.svg" alt="Твіттер"/>
                         </a>
-                        <a className={styles["footer_telegram"]} href="https://www.youtube.com">
-                            <img src="/svg/footer_telegram.svg" alt="Телеграм" />
+                        <a className={styles["footer_telegram"]} href="https://www.instagram.com/solaris_dacha/">
+                            <img src="/svg/footer_telegram.svg" alt="Телеграм"/>
                         </a>
                     </div>
                 </div>

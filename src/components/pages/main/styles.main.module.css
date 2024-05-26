@@ -166,14 +166,14 @@
     font-weight: 500;
     font-size: 18px;
     padding-top: 39px;
-    padding-left: 468px;
+    padding-left: 448px;
 }
 .discount_propose {
     color: #ffffff;
     font-weight: 600;
     font-size: 20px;
     padding-top: 9px;
-    padding-left: 362px;
+    padding-left: 260px;
 }
 .discount_desc {
     color: white;
@@ -181,8 +181,9 @@
     font-size: 16px;
     position: absolute;
     padding-top: 25px;
-    padding-left: 355px;
+    padding-left: 324px;
     text-align: center;
+    width: 650px;
 }
 .detail_button_discount {
     width: 220px;

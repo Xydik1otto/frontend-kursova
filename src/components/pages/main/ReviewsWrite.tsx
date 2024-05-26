@@ -1,7 +1,7 @@
 "use client"
 import { FC, useState } from 'react';
 import Image from 'next/image';
-import styles from './styles.reviews.write.module.css';
+import styles from '../../reviews-write/styles.reviews.write.module.css';
 
 const ReviewsWrite: FC = () => {
     const [rating, setRating] = useState<number | null>(null);

@@ -1,16 +1,67 @@
-// Core
-import { FC } from 'react';
+"use client"
+import { FC, useState } from 'react';
 import Image from 'next/image';
-// Styles
 import styles from './styles.main.module.css';
 
 const MainPage: FC = () => {
+    const discounts = [
+        {
+            imgSrc: "/img/discount.png",
+            name: "Акція",
+            propose: "Спеціальна пропозиція:",
+            desc: "Затишний однокімнатний номер в \"Solar.is\"! Ідеально підходить для зручного та комфортного відпочинку під час вашої подорожі до Карпат.",
+        },
+        {
+            imgSrc: "/img/discount2.png",
+            name: "Акція 2",
+            propose: "Інша пропозиція:",
+            desc: "Затишний та сучасний двокімнатний номер у 'Solar.is'! Ідеально підходить для релаксу та приємного проведення часу в атмосфері комфорту та затишку.",
+        },
+    ];
+    const reviews = [
+        {
+            username: "User1",
+            rating: 5,
+            comment: "Готель вражає своєю чистотою та комфортом. Персонал дуже привітний і завжди готовий допомогти. Зручне розташування із прекрасним видом з вікон. Щасливий, що обрав цей готель для своєї подорожі."
+        },
+        {
+            username: "User2",
+            rating: 4,
+            comment: "Чудовий готель з приємним персоналом та комфортними умовами. З задоволенням повернуся ще раз!"
+        },
+        // Додайте інші відгуки, якщо потрібно
+    ];
+
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const handlePrev = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + discounts.length) % discounts.length);
+    };
+
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % discounts.length);
+    };
+
+    const currentDiscount = discounts[currentIndex];
+    const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
+
+    const handlePrevReview = () => {
+        setCurrentReviewIndex((prevIndex) => (prevIndex - 1 + reviews.length) % reviews.length);
+    };
+
+    const handleNextReview = () => {
+        setCurrentReviewIndex((prevIndex) => (prevIndex + 1) % reviews.length);
+    };
+
+    const currentReview = reviews[currentReviewIndex];
+
     return (
         <div className={styles["main_page"]}>
             <div className={styles["main_page_photo"]}>
                 <img src="/img/main_page_photo.png" alt="solar.is"/>
             </div>
-            <div className={styles["main_info_block"]}>
+            <div id="main_info_block" className={styles["main_info_block"]}>
                 <div className={styles["main_info"]}>
                     <Image
                         width={452}
@@ -30,30 +81,28 @@ const MainPage: FC = () => {
                     </p>
                 </div>
             </div>
-            <div className={styles["discount_block_main"]}>
+            <div id="discount_block_main" className={styles["discount_block_main"]}>
                 <div className={styles["discount"]}>
                     <div className={styles["discount_left"]}>
-                        <button className={styles["discount_button_left"]}>
+                        <button className={styles["discount_button_left"]} onClick={handlePrev}>
                             <img src="/svg/arrow.svg" alt="Вліво"/>
                         </button>
                     </div>
                     <div className={styles["discount_block"]}>
-                        <img className={styles["discount_img"]} src="/img/discount.png" alt="Знижка"/>
-                        <p className={styles["discount_name"]}>Акція</p>
-                        <p className={styles["discount_propose"]}>Спеціальна пропозиція: </p>
-                        <p className={styles["discount_desc"]}>Затишний однокімнатний <br/> номер в "Solar.is"!
-                            Ідеально <br/> підходить для зручного та <br/> комфортного відпочинку під <br/> час вашої
-                            подорожі до Карпат.</p>
+                        <img className={styles["discount_img"]} src={currentDiscount.imgSrc} alt="Знижка"/>
+                        <p className={styles["discount_name"]}>{currentDiscount.name}</p>
+                        <p className={styles["discount_propose"]}>{currentDiscount.propose}</p>
+                        <p className={styles["discount_desc"]}>{currentDiscount.desc}</p>
                         <button className={styles["detail_button_discount"]}>Забронювати</button>
                     </div>
                     <div className={styles["discount_right"]}>
-                        <button className={styles["discount_button_right"]}>
+                        <button className={styles["discount_button_right"]} onClick={handleNext}>
                             <img src="/svg/arrow2.svg" alt="Вправо"/>
                         </button>
                     </div>
                 </div>
             </div>
-            <div className={styles["main_rooms_upper"]}>
+            <div id="main_rooms_upper" className={styles["main_rooms_upper"]}>
                 <div className={styles["eco_room"]}>
                     <Image
                         width={500}
@@ -120,26 +169,24 @@ const MainPage: FC = () => {
                     <button className={styles["detail_button_lux"]}>Детальніше</button>
                 </div>
             </div>
-            <div className={styles["reviews"]}>
+            <div id="reviews" className={styles["reviews"]}>
                 <p className={styles["reviews_title"]}>Відгуки</p>
                 <div className={styles["reviews_main"]}>
-                    <p className={styles["reviews_username"]}>User</p>
+                    <p className={styles["reviews_username"]}>{currentReview.username}</p>
                     <div className={styles["reviews_overall"]}>
                         <p className={styles["reviews_rating_desc"]}>Оцінка:</p>
-                        <p className={styles["reviews_rating"]}>5</p>
+                        <p className={styles["reviews_rating"]}>{currentReview.rating}</p>
                         <p className={styles["reviews_rating_total"]}>/5</p>
                     </div>
                     <p className={styles["reviews_comment_title"]}>Відгук:</p>
-                    <p className={styles["reviews_comment"]}>Готель вражає своєю чистотою та комфортом. Персонал дуже
-                        привітний і завжди готовий допомогти. Зручне розташування із прекрасним видом з вікон.
-                        Щасливий, що обрав цей готель для своєї подорожі.</p>
+                    <p className={styles["reviews_comment"]}>{currentReview.comment}</p>
                     <div className={styles["review_left"]}>
-                        <button className={styles["review_button_left"]}>
+                        <button className={styles["review_button_left"]} onClick={handlePrevReview}>
                             <img src="/svg/arrowb.svg" alt="Вліво"/>
                         </button>
                     </div>
                     <div className={styles["review_right"]}>
-                        <button className={styles["review_button_right"]}>
+                        <button className={styles["review_button_right"]} onClick={handleNextReview}>
                             <img src="/svg/arrowb1.svg" alt="Вправо"/>
                         </button>
                     </div>
@@ -155,28 +202,29 @@ const MainPage: FC = () => {
                 </div>
                 <div className={styles["footer_subtitle_hotel"]}>
                     <p className={styles["footer_hotel_desc"]}>Готель у серці Карпат</p>
-                    <a className={styles["footer_about_hotel"]} href="https://www.youtube.com">Про готель</a>
-                    <a className={styles["footer_action"]} href="https://www.youtube.com">Акції</a>
-                    <a className={styles["footer_rooms"]} href="https://www.youtube.com">Номери та ціни</a>
-                    <a className={styles["footer_reviews"]} href="https://www.youtube.com">Відгуки</a>
+                    <a className={styles["footer_about_hotel"]} href="#main_info_block">Про готель</a>
+                    <a className={styles["footer_action"]} href="#discount_block_main">Акції</a>
+                    <a className={styles["footer_rooms"]} href="#main_rooms_upper">Номери та ціни</a>
+                    <a className={styles["footer_reviews"]} href="#reviews">Відгуки</a>
                 </div>
                 <div className={styles["footer_subtitle_contacts"]}>
                     <p className={styles["footer_contacts"]}>Контакти</p>
-                    <a className={styles["footer_adress"]} href="https://www.youtube.com">Ужгород, вул.Загорська 12</a>
+                    <a className={styles["footer_adress"]}
+                       href="https://maps.app.goo.gl/m2Y9X4RcSXV7x53p6">Ужгород, пров.Минайський 7</a>
                     <a className={styles["footer_mail"]}
-                       href="https://www.youtube.com">solar.is.dachakovera@gmail.com</a>
-                    <a className={styles["footer_telephone"]} href="https://www.youtube.com">+380777777777</a>
+                       href="https://mail.google.com/mail/u/0/?authuser=volkovskiy22@gmail.com">solar.is.dachakovera@gmail.com</a>
+                    <a className={styles["footer_telephone"]} href="tel:+380637191493">+380637191493</a>
                     <div className={styles["footer_social"]}>
-                        <a className={styles["footer_inst"]} href="https://www.youtube.com">
+                        <a className={styles["footer_inst"]} href="https://www.instagram.com/solaris_dacha/">
                             <img src="/svg/footer_insta.svg" alt="Інстаграм"/>
                         </a>
-                        <a className={styles["footer_facebook"]} href="https://www.youtube.com">
+                        <a className={styles["footer_facebook"]} href="https://www.instagram.com/solaris_dacha/">
                             <img src="/svg/footer_facebook.svg" alt="Фейсбук"/>
                         </a>
-                        <a className={styles["footer_twitter"]} href="https://www.youtube.com">
+                        <a className={styles["footer_twitter"]} href="https://www.instagram.com/solaris_dacha/">
                             <img src="/svg/footer_twitter.svg" alt="Твіттер"/>
                         </a>
-                        <a className={styles["footer_telegram"]} href="https://www.youtube.com">
+                        <a className={styles["footer_telegram"]} href="https://www.instagram.com/solaris_dacha/">
                             <img src="/svg/footer_telegram.svg" alt="Телеграм"/>
                         </a>
                     </div>
