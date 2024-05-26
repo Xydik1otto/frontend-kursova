@@ -1,9 +1,12 @@
-"use client"
 import { FC, useState } from 'react';
 import Image from 'next/image';
-import styles from '../../reviews-write/styles.reviews.write.module.css';
+import styles from './styles.reviews.write.module.css';
 
-const ReviewsWrite: FC = () => {
+interface ReviewsWriteProps {
+    onClose: () => void;
+}
+
+const ReviewsWrite: FC<ReviewsWriteProps> = ({ onClose }) => {
     const [rating, setRating] = useState<number | null>(null);
     const [message, setMessage] = useState<string>('');
     const [userFirstName, setUserFirstName] = useState<string>(''); // Припустимо, що ім'я користувача ви отримуєте окремо
@@ -40,6 +43,7 @@ const ReviewsWrite: FC = () => {
             // Очищуємо форму після успішної відправки
             setRating(null);
             setMessage('');
+            onClose(); // Закриття блоку ReviewsWrite після відправки відгуку
         } catch (error) {
             console.error('Error:', error);
         }
