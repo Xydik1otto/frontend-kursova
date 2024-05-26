@@ -1,20 +1,53 @@
 "use client"
 // Core
-import { FC, useState } from 'react';
+import { FC, useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 // Styles
 import styles from './styles.user.page.module.css';
 import Link from "next/link";
 
+async function checkUserAuthentication() {
+    try {
+        const response = await fetch('http://localhost:5161/api/user/checkAuth', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                // Include your authentication headers here
+            },
+        });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        const data = await response.json();
+        return data.isAuthenticated;
+    } catch (error) {
+        console.error('There was a problem with the authentication check:', error);
+        return false;
+    }
+}
+
+
 const UserPage: FC = () => {
     const [isEditing, setIsEditing] = useState(false);
     const [user, setUser] = useState({
-        name: 'User',
-        surname: 'User',
+        id: 0,
+        firstName: 'User',
+        lastName: 'User',
         email: 'qwerty@gmail.com',
-        number: '+380999999999',
+        phoneNumber: '+380999999999',
         password: 'qwertytrewq1213454'
     });
+
+    useEffect(() => {
+        checkUserAuthentication().then(isAuthenticated => {
+            if (!isAuthenticated) {
+                window.location.href = '/login';
+            }
+        });
+    }, []);
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setUser({
@@ -23,7 +56,31 @@ const UserPage: FC = () => {
         });
     };
 
-    const toggleEdit = () => {
+    const toggleEdit = async () => {
+        if (isEditing) {
+            // If the user was editing, save the changes
+            try {
+                const response = await fetch('http://localhost:5161/api/user/edit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(user),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const data = await response.json();
+                console.log('User edit successful:', data);
+                // Обробка успішного редагування
+            } catch (error) {
+                console.error('There was a problem with the edit request:', error);
+                // Обробка помилки редагування
+            }
+        }
+
         setIsEditing(!isEditing);
     };
 
@@ -42,13 +99,13 @@ const UserPage: FC = () => {
                             {isEditing ? (
                                 <input
                                     className={styles["user_name_data"]}
-                                    value={user.name}
+                                    value={user.firstName}
                                     onChange={handleInputChange}
-                                    name="name"
+                                    name="firstName"
                                 />
                             ) : (
                                 <p className={styles["user_name_data"]}>
-                                    {user.name}
+                                    {user.firstName}
                                 </p>
                             )}
                         </div>
@@ -59,13 +116,13 @@ const UserPage: FC = () => {
                             {isEditing ? (
                                 <input
                                     className={styles["user_surname_data"]}
-                                    value={user.surname}
+                                    value={user.lastName}
                                     onChange={handleInputChange}
-                                    name="surname"
+                                    name="lastName"
                                 />
                             ) : (
                                 <p className={styles["user_surname_data"]}>
-                                    {user.surname}
+                                    {user.lastName}
                                 </p>
                             )}
                         </div>
@@ -93,13 +150,13 @@ const UserPage: FC = () => {
                             {isEditing ? (
                                 <input
                                     className={styles["user_number_data"]}
-                                    value={user.number}
+                                    value={user.phoneNumber}
                                     onChange={handleInputChange}
-                                    name="number"
+                                    name="phoneNumber"
                                 />
                             ) : (
                                 <p className={styles["user_number_data"]}>
-                                    {user.number}
+                                    {user.phoneNumber}
                                 </p>
                             )}
                         </div>

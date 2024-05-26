@@ -1,7 +1,10 @@
 "use client"
-import { FC, useState } from 'react';
+import { FC, useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import styles from './styles.module.css';
 import Link from "next/link";
+import {put} from "@jridgewell/set-array";
+import {router} from "next/client";
 
 const RegistrationPage: FC = () => {
     const [firstName, setFirstName] = useState('');
@@ -9,6 +12,7 @@ const RegistrationPage: FC = () => {
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [password, setPassword] = useState('');
+
 
     const handleRegister = async () => {
         const userData = {
@@ -36,7 +40,10 @@ const RegistrationPage: FC = () => {
 
             const data = await response.json();
             console.log('Registration successful:', data);
-            // Обробка успішної реєстрації
+
+            // Переадресація на головну сторінку
+            if(response.ok){
+                router.push("http://localhost:3000")}
         } catch (error) {
             console.error('There was a problem with the registration request:', error);
             // Обробка помилки реєстрації
